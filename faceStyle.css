@@ -1,0 +1,15 @@
+.faceimage {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: url(assets/pfp/blank_vibsquare.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    user-select: none; 
+    -webkit-user-select: none;       
+    -moz-user-select: none;
+    -ms-user-select: none;
+    overflow: hidden;
+}
