@@ -1,9 +1,13 @@
+@font-face {
+    font-family: comic-sans-ms;
+    src: url(assets/fonts/comicsans.ttf);
+}
 body {
     margin: 0px;
     padding: 0px;
     width: 100%;
     height: 100vh;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "comic-sans-ms";
     background-color: #FFFFFF;
     user-select: none; 
     -webkit-user-select: none;       
