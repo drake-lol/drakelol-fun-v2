@@ -40,7 +40,83 @@
             <div class="leftGradient"></div>
             <div class="rightGradient"></div>
             <div class="bottomGradient"></div>
-
         </div>
+
+        <!--face window stuff-->
+        <div class="facewindow" id="facewindow">
+            <div class="faceiframe-area">
+                <iframe src="face.html" class="page-iframe" frameborder="0"></iframe>
+            </div>
+            <!--add corner images-->
+            <div class="facetopleftCornerDecoration"></div>
+            <div class="facetoprightCornerDecoration"></div>
+            <div class="facebottomleftCornerDecoration"></div>
+            <div class="facebottomrightCornerDecoration"></div>
+
+            <!--add areas for side colors-->
+
+            <!--add button area / add title area-->
+            <div class="facetopGradient">
+                <div class="facebuttonArea">
+                    <div class="facexButton"></div>
+                    <div class="facemaxButton"></div>
+                    <div class="faceminButton"></div>
+                </div>
+                <div class="facetitleArea">
+                    <div class="facetitleImage"></div>
+                    <div class="facetitleText">
+                        <body>current pfp</body>
+                    </div>
+                </div>
+            </div>
+            <div class="faceleftGradient"></div>
+            <div class="facerightGradient"></div>
+            <div class="facebottomGradient"></div>
+        </div>
+        <script>
+            //Make the DIV element draggagle:
+            dragElement(document.getElementById("facewindow"));
+            
+            function dragElement(elmnt) {
+              var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+              if (document.getElementById(elmnt.id + "facewindow")) {
+                /* if present, the header is where you move the DIV from:*/
+                document.getElementById(elmnt.id + "facewindow").onmousedown = dragMouseDown;
+              } else {
+                /* otherwise, move the DIV from anywhere inside the DIV:*/
+                elmnt.onmousedown = dragMouseDown;
+              }
+            
+              function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // get the mouse cursor position at startup:
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                // call a function whenever the cursor moves:
+                document.onmousemove = elementDrag;
+              }
+            
+              function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // calculate the new cursor position:
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                // set the element's new position:
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+              }
+            
+              function closeDragElement() {
+                /* stop moving when mouse button is released:*/
+                document.onmouseup = null;
+                document.onmousemove = null;
+              }
+            }
+            </script>
     </body>
 </html>

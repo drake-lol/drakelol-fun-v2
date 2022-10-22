@@ -252,7 +252,7 @@ body {
 
 /*add title area / title info*/
 .titleArea {
-    width: 50px;
+    width: 110px;
     height: 21px;
     background: #ff000000;
     left: 0px;
@@ -276,7 +276,276 @@ body {
 }
 
 .titleText {
-    width: calc(220px - 25px);
+    width: calc(110px - 25px);
+    height: 21px;
+    background: #07cdff00;
+    bottom: 1px;
+    left: 25px;
+    position: absolute;
+    font-family: "segoe-ui";
+    font-size: 70%;
+    align-items: center;
+    user-select: none; 
+    -webkit-user-select: none;       
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+
+
+
+/*face window*/
+
+.facewindow {
+    position: fixed;
+    width: 128px;
+    height: 225px;
+    bottom: 10px;
+    right: 10px;
+    padding-top: 32px;
+    padding-left: 9px;
+    padding-bottom: 9px;
+    padding-right: 9px;
+    background-color: #ff000000;
+    resize:none;
+    overflow: hidden;
+    min-width: 225px;
+    min-height: 100px;
+    max-width: 83%;
+    max-height: 90%;
+}
+
+.faceiframe-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+
+.facepage-iframe {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    user-select: none; 
+    -webkit-user-select: none;       
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/*corner decorations*/
+
+.facetopleftCornerDecoration {
+    background: url(assets/buttons/small/roundedLeft.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 130px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+.facetoprightCornerDecoration {
+    background: url(assets/buttons/small/roundedRight.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 130px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+.facebottomleftCornerDecoration {
+    background: url(assets/buttons/small/leftBottomCorner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+.facebottomrightCornerDecoration {
+    background: url(assets/buttons/small/rightBottomCorner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+/*side gradients*/
+.facetopGradient {
+    width: calc(100% - 18px);
+    height: 32px;
+    position: absolute;
+    background: rgb(52,52,52);
+    background: linear-gradient(180deg, rgba(52,52,52,1) 0%, rgba(52,52,52,1) 3%, rgba(255,255,255,1) 3%, rgba(255,255,255,1) 6%, rgba(152,180,208,1) 6%, rgba(185,209,234,1) 100%);
+    top: 0px;
+    left: 9px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.faceleftGradient {
+    width: 9px;
+    height: calc(100% - 139px);
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 13%, rgba(255,255,255,1) 13%, rgba(255,255,255,1) 22%, rgba(186,210,234,1) 22%, rgba(186,210,234,1) 100%);
+    top: 130px;
+    left: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.facerightGradient {
+    width: 9px;
+    height: calc(100% - 139px);
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 13%, rgba(63,206,242,1) 13%, rgba(63,206,242,1) 22%, rgba(186,210,234,1) 22%, rgba(186,210,234,1) 100%);
+    top: 130px;
+    right: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.facebottomGradient {
+    width: calc(100% - 18px);
+    height: 9px;
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 13%, rgba(63,206,242,1) 13%, rgba(63,206,242,1) 22%, rgba(185,209,234,1) 22%, rgba(185,209,234,1) 100%);
+    bottom: 0px;
+    left: 9px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*add button area / buttons*/
+
+.facebuttonArea {
+    width: 103px;
+    height: 21px;
+    background: #ff000000;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+}
+
+.facexButton {
+    width: 32px;
+    height: 18px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: url(assets/buttons/small/x.png);
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+.facexButton:hover {
+    width: 32px;
+    height: 18px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: url(assets/buttons/small/xHover.png);
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+.facemaxButton {
+    width: 32px;
+    height: 18px;
+    position: absolute;
+    right: 34px;
+    top: 0px;
+    background: url(assets/buttons/small/max.png);
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+.facemaxButton:hover {
+    width: 32px;
+    height: 18px;
+    position: absolute;
+    right: 34px;
+    top: 0px;
+    background: url(assets/buttons/small/maxHover.png);
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+.faceminButton {
+    width: 32px;
+    height: 18px;
+    position: absolute;
+    right: 68px;
+    top: 0px;
+    background: url(assets/buttons/small/min.png);
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+.faceminButton:hover {
+    width: 32px;
+    height: 18px;
+    position: absolute;
+    right: 68px;
+    top: 0px;
+    background: url(assets/buttons/small/minHover.png);
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+/*add title area / title info*/
+.facetitleArea {
+    width: 90px;
+    height: 21px;
+    background: #ff000000;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+}
+
+.facetitleImage {
+    width: 21px;
+    height: 21px;
+    background: #00000000;
+    bottom: 3px;
+    left: 0px;
+    position: absolute;
+    background: url(assets/window/drake_favicon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+.facetitleText {
+    width: calc(100px - 25px);
     height: 21px;
     background: #07cdff00;
     bottom: 1px;
