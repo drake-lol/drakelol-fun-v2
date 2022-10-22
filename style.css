@@ -40,7 +40,7 @@ body {
     background-color: #ff000000;
     resize: both;
     overflow: hidden;
-    min-width: 225px;
+    min-width: 500px;
     min-height: 100px;
     max-width: calc(95vw - 50px);
     max-height: calc(85vh - 60px);
