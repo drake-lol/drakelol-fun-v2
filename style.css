@@ -61,7 +61,7 @@ body {
 /*corner decorations*/
 
 .topleftCornerDecoration {
-    background: url(assets/buttons/small/roundedLeft.png);
+    background: url(https://github.com/drake-lol/drakelol-fun-v2/blob/main/assets/buttons/small/roundedLeft.png?raw=true);
     background-size: contain;
     background-repeat: no-repeat;
     width: 9px;
@@ -75,7 +75,7 @@ body {
 }
 
 .toprightCornerDecoration {
-    background: url(assets/buttons/small/roundedRight.png);
+    background: url(https://github.com/drake-lol/drakelol-fun-v2/blob/main/assets/buttons/small/roundedRight.png?raw=true);
     background-size: contain;
     background-repeat: no-repeat;
     width: 9px;
@@ -89,7 +89,7 @@ body {
 }
 
 .bottomleftCornerDecoration {
-    background: url(assets/buttons/small/leftBottomCorner.png);
+    background: url(https://github.com/drake-lol/drakelol-fun-v2/blob/main/assets/buttons/small/leftBottomCorner.png?raw=true);
     background-size: contain;
     background-repeat: no-repeat;
     width: 9px;
@@ -103,7 +103,7 @@ body {
 }
 
 .bottomrightCornerDecoration {
-    background: url(assets/buttons/small/rightBottomCorner.png);
+    background: url(https://github.com/drake-lol/drakelol-fun-v2/blob/main/assets/buttons/small/rightBottomCorner.png?raw=true);
     background-size: contain;
     background-repeat: no-repeat;
     width: 9px;
