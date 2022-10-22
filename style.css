@@ -42,8 +42,8 @@ body {
     overflow: hidden;
     min-width: 225px;
     min-height: 100px;
-    max-width: 95vw;
-    max-height: 45vw;
+    max-width: calc(95vw - 50px);
+    max-height: calc(85vh - 60px);
 }
 
 .iframe-area {
@@ -536,7 +536,7 @@ body {
     bottom: 3px;
     left: 0px;
     position: absolute;
-    background: url(assets/window/drake_favicon.png);
+    background: url(assets/window/photoviewer_icon.png);
     background-size: cover;
     background-repeat: no-repeat;
     image-rendering: auto;
