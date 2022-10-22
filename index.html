@@ -9,29 +9,38 @@
     </head>
     <body>
         <div class="background"></div>
-        <div class="page-contents">
-            <div class="window-decoration-top">
-                <div class="window-button-section">
-                    <div class="close-button"></div>
-                    <div class="max-button"></div>
-                    <div class="min-button"></div>
-               </div>
-             <div class="window-title-section">
 
+        <!--define window and other things-->
+        <div class="window" id="window">
+            <div class="iframe-area">
+                <iframe src="page.html" class="page-iframe" frameborder="0"></iframe>
             </div>
+            <!--add corner images-->
+            <div class="topleftCornerDecoration"></div>
+            <div class="toprightCornerDecoration"></div>
+            <div class="bottomleftCornerDecoration"></div>
+            <div class="bottomrightCornerDecoration"></div>
 
-            </div>
-            <div class="topbar">
-                <div class="topbar-contents-left">
-                    <h1>drake lol's website</h1>
+            <!--add areas for side colors-->
+
+            <!--add button area / add title area-->
+            <div class="topGradient">
+                <div class="buttonArea">
+                    <div class="xButton"></div>
+                    <div class="maxButton"></div>
+                    <div class="minButton"></div>
                 </div>
-                <div class="topbar-contents-right">
-                    <div class="aboutbutton">about</div>
-                    <div class="button2">test</div>
+                <div class="titleArea">
+                    <div class="titleImage"></div>
+                    <div class="titleText">
+                        <body>drake's website</body>
+                    </div>
                 </div>
             </div>
+            <div class="leftGradient"></div>
+            <div class="rightGradient"></div>
+            <div class="bottomGradient"></div>
+
         </div>
-        </div>
-    </div>
     </body>
 </html>
