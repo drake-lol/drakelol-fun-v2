@@ -30,9 +30,9 @@ body {
 .window {
     position: fixed;
     width: 75%;
-    height: 400px;
-    top: 50px;
-    left: 50px;
+    height: 60%;
+    top: 10px;
+    left: 10px;
     padding-top: 32px;
     padding-left: 9px;
     padding-bottom: 9px;
@@ -40,7 +40,7 @@ body {
     background-color: #ff000000;
     resize: both;
     overflow: hidden;
-    min-width: 500px;
+    min-width: 370px;
     min-height: 100px;
     max-width: calc(95vw - 50px);
     max-height: calc(85vh - 60px);

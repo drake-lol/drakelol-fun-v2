@@ -3,26 +3,20 @@
     src: url(assets/fonts/comicsans.ttf);
 }
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: auto;
+    padding: auto;
     width: 100%;
     height: 100vh;
     font-family: "comic-sans-ms";
     background-color: #ffffff;
-    user-select: none; 
-    -webkit-user-select: none;       
-    -moz-user-select: none;
-    -ms-user-select: none;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 .page-stuff {
+    margin: auto;
+    position: fixed;
     width: 100%;
     height: 100%;
-    user-select: none; 
-    -webkit-user-select: none;       
-    -moz-user-select: none;
-    -ms-user-select: none;
-    overflow: hidden;
 }
 .topbar-main {
     background: rgb(237,250,57);
@@ -32,20 +26,15 @@ body {
     position: fixed;
     left: 0px;
     top: 0px;
-    user-select: none; 
-    -webkit-user-select: none;       
-    -moz-user-select: none;
-    -ms-user-select: none;
-    overflow: hidden;
-    align-items: center;
+    z-index: 5;
 }
 
 .tb-left {
     width: 100%;
-    height: 28px;
+    height: 38px;
     left: 6px;
     top: -2px;
-    font-size: 19px;
+    font-size: 21px;
     word-wrap: normal;
     position: absolute;
     font-weight: bolder;
@@ -71,8 +60,8 @@ body {
     width: 85px;
     height: 100%;
     right: 0px;
-    top: -4px;
-    font-size: 19px;
+    top: -6px;
+    font-size: 21px;
     word-wrap: normal;
     position: absolute;
     font-weight: bold;
@@ -86,8 +75,8 @@ body {
     width: 120px;
     height: 100%;
     right: 90px;
-    top: -4px;
-    font-size: 19px;
+    top: -6px;
+    font-size: 21px;
     word-wrap: normal;
     position: absolute;
     font-weight: bold;
@@ -106,4 +95,61 @@ body {
     left: 0px;
     position: absolute;
     padding: 10px;
+}
+
+.textarea {
+    width: calc(100% - 300px);
+    height: 100%;
+    position: fixed;
+    background: #ffffff;
+    top: 28px;
+    left: 5px;
+    z-index: 3;
+}
+
+.photogallery {
+    right: -20px;
+    top: 90px;
+    width: 280px;
+    height: 1500px;
+    position: fixed;
+    background: #C7C7C7;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: grid;
+    z-index: 2;
+}
+.photogallery-header {
+    right: 0px;
+    top: 26px;
+    width: 280px;
+    height: 64px;
+    position: fixed;
+    background: #9e9e9e;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    z-index: 4;
+}
+
+.image1 {
+    background: url(assets/png.png);
+    width: calc(100% - 20px);
+    height: 420px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image2 {
+    background: url(assets/IMG_2582.jpg);
+    width: calc(100% - 20px);
+    height: 390px;
+    position: absolute;
+    top: 440px;
+    left: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
